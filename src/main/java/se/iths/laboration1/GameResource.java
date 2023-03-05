@@ -18,48 +18,47 @@ import java.util.List;
 @Path("/games")
 public class GameResource {
 
-    @Inject
-    GameRepository repository;
+	@Inject
+	GameRepository repository;
 
-    @Inject
-    Mapper mapper;
+	@Inject
+	Mapper mapper;
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<GameDto> getAll(@QueryParam("name") String name){
-        if (name == null)
-            return mapper.map(repository.findAll());
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<GameDto> getAll() {
+		return mapper.map(repository.findAll());
+	}
 
-        return mapper.map(repository.findAllByName(name));
-    }
+	@GET
+	@Path("/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getOne(@PathParam("id") Long id) {
+		var game = repository.findOne(id);
+		if (game.isPresent())
+			return Response.ok().entity(game.get()).build();
+		return Response.status(404).build();
+	}
 
-    @GET
-    @Path("/{id}")
-    public Response getOne(@PathParam("id") Long id){
-        var game = repository.findOne(id);
-        if (game.isPresent())
-            return Response.ok().entity(game.get()).build();
-        return Response.status(404).build();
-    }
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response addOne(@Valid Game game) {
+		repository.insertGame(game);
+		return Response.created(URI.create("/games" + game.getId())).build();
+	}
 
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response addOne(@Valid Game game) {
-        repository.insertGame(game);
-        return Response.created(URI.create("/games" + game.getId())).build();
-    }
+	@DELETE
+	@Path("/{id}")
+	public void deleteOne(@PathParam("id") Long id) {
+		repository.deleteGame(id);
+	}
 
-    @DELETE
-    @Path("/{id}")
-    public void deleteOne(@PathParam("id") Long id){
-        repository.deleteGame(id);
-    }
-    @PUT
-    @Path("/{id}")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response update(@PathParam("id") Long id, GameDto game) {
-        return Response.ok().entity(mapper.map(repository.update(id,mapper.map(game)))).build();
+	@PUT
+	@Path("/{id}")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response update(@PathParam("id") Long id, GameDto game) {
+		return Response.ok().entity(mapper.map(repository.update(id, mapper.map(game)))).build();
 
-    }
+	}
 }

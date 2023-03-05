@@ -13,6 +13,9 @@ public class GameDto {
 		this.shortening = game.getShortening();
 	}
 
+	public GameDto() {
+	}
+
 	public Long getId() {
 		return id;
 	}

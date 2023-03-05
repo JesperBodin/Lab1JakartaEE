@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ddd3870-a47c-4ff0-8ee3-6d1b983e87d0" name="Changes" comment="Add GameDto.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/mapper/Mapper.java" afterDir="false" />
+    <list default="true" id="3ddd3870-a47c-4ff0-8ee3-6d1b983e87d0" name="Changes" comment="Add CRUD to GameResource.java&#10;&#10;Update Mapper.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/GameResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/GameResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/game/GameDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/game/GameDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678010699745</updated>
-      <workItem from="1678010700749" duration="4251000" />
+      <workItem from="1678010700749" duration="7213000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678010736759</created>
@@ -146,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678014349306</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Mapper.java">
+      <created>1678014982791</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678014982791</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add CRUD to GameResource.java&#10;&#10;Update Mapper.java">
+      <created>1678016391300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678016391300</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +185,8 @@
     <MESSAGE value="Add entity Game.java" />
     <MESSAGE value="Add GameRepository.java" />
     <MESSAGE value="Add GameDto.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add GameDto.java" />
+    <MESSAGE value="Add Mapper.java" />
+    <MESSAGE value="Add CRUD to GameResource.java&#10;&#10;Update Mapper.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CRUD to GameResource.java&#10;&#10;Update Mapper.java" />
   </component>
 </project>
