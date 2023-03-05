@@ -9,8 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ddd3870-a47c-4ff0-8ee3-6d1b983e87d0" name="Changes" comment="Add entity Game.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/game/GameRepository.java" afterDir="false" />
+    <list default="true" id="3ddd3870-a47c-4ff0-8ee3-6d1b983e87d0" name="Changes" comment="Add GameDto.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/mapper/Mapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678010699745</updated>
-      <workItem from="1678010700749" duration="3295000" />
+      <workItem from="1678010700749" duration="4251000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678010736759</created>
@@ -133,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678012300743</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add GameRepository.java">
+      <created>1678014030150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678014030150</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add GameDto.java">
+      <created>1678014349306</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678014349306</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +167,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Update Pom.xml" />
     <MESSAGE value="Add entity Game.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add entity Game.java" />
+    <MESSAGE value="Add GameRepository.java" />
+    <MESSAGE value="Add GameDto.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GameDto.java" />
   </component>
 </project>
