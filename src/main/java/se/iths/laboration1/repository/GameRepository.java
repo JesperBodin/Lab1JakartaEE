@@ -1,9 +1,10 @@
-package se.iths.laboration1.game;
+package se.iths.laboration1.repository;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+import se.iths.laboration1.entity.Game;
 
 import java.util.List;
 import java.util.Optional;
@@ -34,18 +35,11 @@ public class GameRepository {
 		game.ifPresent((g) -> entityManager.remove(g));
 	}
 
-	public List<Game> findAllByName(String name) {
-		var query = entityManager.createQuery("SELECT g from Game g where g.name like :name ");
-		query.setParameter("name", name);
-		return (List<Game>) query.getResultList();
-
-	}
-	public Game update(Long id, Game game){
+	public Game update(Long id, Game game) {
 		var entity = entityManager.find(Game.class, id);
 		entity.setName(game.getName());
 		entity.setShortening(game.getShortening());
 		entityManager.persist(entity);
 		return entity;
 	}
-
 }

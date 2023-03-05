@@ -1,5 +1,5 @@
 
-package se.iths.laboration1.game;
+package se.iths.laboration1.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -22,6 +22,7 @@ public class Game {
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
@@ -41,7 +42,4 @@ public class Game {
 	public void setShortening(String shortening) {
 		this.shortening = shortening;
 	}
-
 }
-
-

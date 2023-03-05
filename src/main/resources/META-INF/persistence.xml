@@ -5,7 +5,7 @@
              version="3.0">
   <persistence-unit name="primary">
     <jta-data-source>java:/MySqlDS</jta-data-source>
-    <class>se.iths.laboration1.game.Game</class>
+    <class>se.iths.laboration1.entity.Game</class>
     <properties>
       <property name="hibernate.hbm2ddl.auto" value="update" />
     </properties>
