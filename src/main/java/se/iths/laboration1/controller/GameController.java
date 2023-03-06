@@ -9,11 +9,8 @@ import se.iths.laboration1.entity.Game;
 import se.iths.laboration1.dto.GameDto;
 import se.iths.laboration1.repository.GameRepository;
 import se.iths.laboration1.dto.GameMapper;
-
 import java.net.URI;
 import java.util.List;
-
-import static jakarta.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
 
 @Path("/games")
 public class GameController {
@@ -48,11 +45,7 @@ public class GameController {
 	@DELETE
 	@Path("/{id}")
 	public void delete(@PathParam("id") Long id) {
-		if (repository.findOne(id).isPresent()) {
-			repository.deleteGame(id);
-			return;
-		}
-		throw new InternalServerErrorException(Response.status(INTERNAL_SERVER_ERROR).build());
+		repository.deleteGame(id);
 	}
 
 	@PUT
