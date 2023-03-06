@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ddd3870-a47c-4ff0-8ee3-6d1b983e87d0" name="Changes" comment="Add Exceptions&#10;&#10;Add final touches">
+    <list default="true" id="3ddd3870-a47c-4ff0-8ee3-6d1b983e87d0" name="Changes" comment="Update delete method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/dto/GameDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/laboration1/dto/GameDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +152,8 @@
       <workItem from="1678037607863" duration="236000" />
       <workItem from="1678037851869" duration="24000" />
       <workItem from="1678037885351" duration="389000" />
-      <workItem from="1678103049055" duration="382000" />
+      <workItem from="1678103049055" duration="763000" />
+      <workItem from="1678105179748" duration="2484000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1678010736759</created>
@@ -217,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678037245973</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update delete method">
+      <created>1678103588044</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678103588044</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update delete method">
+      <created>1678103773928</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678103773928</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +259,8 @@
     <MESSAGE value="Add CRUD to GameResource.java&#10;&#10;Update Mapper.java" />
     <MESSAGE value="Edit persistence-unit&#10;&#10;Update GameDto.java&#10;&#10;Update GameResource.java" />
     <MESSAGE value="Add Exceptions&#10;&#10;Add final touches" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Exceptions&#10;&#10;Add final touches" />
+    <MESSAGE value="final touches" />
+    <MESSAGE value="Update delete method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update delete method" />
   </component>
 </project>

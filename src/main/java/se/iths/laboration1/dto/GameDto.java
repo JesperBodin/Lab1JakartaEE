@@ -5,14 +5,29 @@ import se.iths.laboration1.entity.Game;
 
 public class GameDto {
 
-	private final Long id;
-	private final String name;
-	private final String shortening;
+	private  Long id;
+	private  String name;
+	private  String shortening;
 
 	public GameDto(Game game) {
 		this.id = game.getId();
 		this.name = game.getName();
 		this.shortening = game.getShortening();
+	}
+
+	public GameDto() {
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setShortening(String shortening) {
+		this.shortening = shortening;
 	}
 
 	public Long getId() {
